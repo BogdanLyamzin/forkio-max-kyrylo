@@ -1,0 +1,136 @@
+//SECTION Here is what you get START
+@import "../mixins";
+@import "../variables";
+
+.advantages {
+  max-width: 1200px;
+  margin: $marginCenter;
+  padding-bottom: 33px;
+  background: #f4f4f4;
+  overflow: hidden;
+
+  &-none-heading {
+    display: none;
+  }
+  &-page{
+    display: flex;
+    &-column {
+      flex: 0 0 50%;
+      width: 50%;
+      padding-left: 30px;
+      padding-top: 100px;
+    }
+  }
+  &-column{
+    padding-top: 84px;
+  }
+  &-big-img {
+    padding-right: 18px;
+    max-width: 977px;
+    max-height: 519px;
+  }
+
+  &-item {
+    @include flex-center;
+    margin-bottom: 34px;
+  }
+  &-item-container-img {
+    width: 111px;
+    margin-right: 23px;
+  }
+  &-item-container {
+    width: 365px;
+
+    &-strong {
+      font-size: 12px;
+      line-height: 13px;
+      color: #323232;
+      font-family: $mRegular;
+    }
+
+    &-text {
+      margin-top: 20px;
+      font-size: 10px;
+      color: #848e97;
+      line-height: 21px;
+      font-family: $mRegular;
+    }
+  }
+  &-heading{
+    font-family: $mBold;
+    font-size: 35px;
+    line-height: 46px;
+    color: #8D81AC;
+    opacity: 1;
+    text-align: left;
+    margin-left: 25px;
+  }
+}
+
+//SECTION Here is what you get END
+
+//SECTION People Are Talking About Fork START
+.advertising {
+  margin: $marginCenter;
+  background: url("../img/testmonials.png") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 98px 10px 0;
+  max-width: 1200px;
+  background-color: #4B3B4E;
+
+  &-heading {
+    font-size: 35px;
+    line-height: 46px;
+    color: #fff;
+    font-family: $mBold;
+  }
+
+  &-all-img {
+    @include flex-wrap-between;
+  }
+
+  &-section {
+    width: 30%;
+    margin-top: 92px;
+  }
+
+  &-logo {
+    @include flex-center;
+    height: 45px;
+  }
+
+  &-text {
+    color: #fff;
+    font-family: $lBoldIta;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 33px;
+  }
+
+  &-last-text {
+    padding-top: 89px;
+    width: 857px;
+    color: #a291a5;
+    font-family: $lRegular;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    opacity: 0.8;
+    margin: $marginCenter;
+  }
+
+  &-last-text:after {
+    content: "";
+    width: 780px;
+    height: 2px;
+    background-color: #645766;
+    opacity: 1;
+    margin-top: 11px;
+    display: inline-flex;
+  }
+}
+//SECTION People Are Talking About Fork END
+//SECTION Here is what you get START

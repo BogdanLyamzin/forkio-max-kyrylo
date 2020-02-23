@@ -1,0 +1,144 @@
+@import "../mixins";
+@import "../variables";
+
+.about__forkio{
+
+  position: relative;
+
+  &__content{
+    text-align: center;
+    max-width: 1200px;
+    padding-top: 60px;
+    background: url("../img/Header-layer.png") no-repeat center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  &__title{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 77px;
+    font-family: $mBold;
+  }
+
+  &__slogan{
+    margin-top: 18px;
+    color: #8d81ac;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: $lRegular;
+  }
+  &__version{
+    margin-top: 18px;
+    color: #848e97;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $mRegular;
+  }
+}
+.forkio-statistics__content{
+  padding-top: 129px;
+  padding-bottom: 58px;
+  text-align: center;
+}
+.forkio-statistics{
+
+  &__heading{
+    color: #635c73;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: $mBold;
+  }
+  &__description{
+    margin: 38px auto 36px auto;
+    color: #323232;
+    font-family: $lRegular;
+    font-size: 19px;
+    line-height: 30px;
+    width: 77.5%;
+  }
+}
+
+.download-btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -65px;
+}
+
+.download-btn__title{
+  display: inline-block;
+  width: 390px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: #8d81ac;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 16px;
+
+  &:hover{
+    background-color: white;
+    color: #8d81ac;
+  }
+}
+.download-btn__info{
+  margin-top: 19px;
+  color: #848e97;
+  font-family: $mRegular;
+  font-size: 14px;
+  line-height: 14px;
+
+}
+
+.statistic-links{
+  width: 365px;
+  display: inline-flex;
+  justify-content: space-between;
+
+  &__container{
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #24292e;
+    background: #eff3f6 linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    float: left;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 4px 0 0 4px;
+    line-height: 20px;
+    font-weight: 900;
+  }
+  &__container:hover{
+    background: #eff3f6 linear-gradient(-180deg, #fafbfc 0%, #eff3f6 0%);
+    border: 1px solid rgba(27, 31, 35, 0.3);
+  }
+  &__count{
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #24292e;
+    vertical-align: middle;
+    float: left;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-decoration: none;
+  }
+}
+
+.fas{
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 2px;
+}

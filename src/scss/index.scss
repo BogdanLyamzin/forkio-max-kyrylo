@@ -1,0 +1,470 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "sections/burger-button";
+@import "sections/_footer";
+@import "sections/header";
+@import "sections/main-content";
+@import "sections/about-app";
+
+body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html body {
+  overflow-x: hidden;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: $marginCenter;
+}
+
+.container {
+  margin: $marginCenter;
+  width: 100%;
+}
+
+.fork-offers{
+  max-width: 1200px;
+  margin: $marginCenter;
+}
+.btn{
+  font-family: $mBold;
+}
+//from 481 to 992
+@media all and (max-width: 992px) {
+  .header__content {
+    padding: 22px 20px 61px 20px;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  .main__menu{
+    width: 75%;
+    position: absolute;
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 22px;
+  }
+  .main__menu__item{
+    margin-right: 0;
+  }
+  .download-btn{
+    bottom: -62px;
+  }
+  .advantages {
+    padding-top: 41px;
+
+    &-heading {
+      display: none;
+    }
+
+    &-none-heading {
+      @include flex-center;
+      color: #8D81AC;
+      opacity: 1;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 45px;
+      font-size: 31px;
+      font-family: $mBold;
+    }
+
+    &-page {
+      flex-direction: column;
+    }
+
+    &-item-container {
+      width: 68%;
+      text-align: left;
+    }
+
+    &-page-column {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .advertising-section{
+    width: 50%;
+  }
+  .advertising-text{
+    margin: $marginCenter;
+    padding-top: 25px;
+    width: 315px;
+  }
+  .advertising-last-text{
+    width: 674px;
+  }
+  .fork-offers-options{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .fork-offers-option{
+    margin-top: 42px;
+    width: 34.5%;
+  }
+  .fork-offers-option-name{
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .fork-offers-option:nth-child(3) {
+    width: 40%;
+  }
+  .forkio-statistics__heading{
+    font-size: 31px;
+  }
+  .forkio-statistics__description{
+    font-size: 15px;
+    width: 87%;
+  }
+
+  .advantages {
+    width: 100%;
+    margin: $marginCenter;
+    padding-top: 0;
+    background: #f4f4f4;
+    overflow: hidden;
+
+
+    &-none-heading {
+      font-size: 31px;
+      color: #8d81ac;
+      opacity: 1;
+      text-align: left;
+      font-weight: 700;
+      @include flex-center;
+      padding-bottom: 45px;
+    }
+    &-item{
+      justify-content: center;
+    }
+
+    &-page {
+      display: block;
+
+      &-column {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        padding-top: 81px;
+        padding-left: 0;
+      }
+    }
+
+    &-item-container {
+      &-strong {
+        font-size: 20px;
+        font-weight: 400;
+        color: #323232;
+      }
+
+      &-text {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #848e97;
+        line-height: 21px;
+        width: unset;
+      }
+    }
+
+    &-heading {
+      display: none;
+    }
+  }
+  //SECTION Here is what you get END
+  //SECTION People Are Talking About Fork START
+  .advertising {
+    background: url("../img/testmonials.png") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 98px 10px 49px;
+
+    &-heading {
+      font-size: 31px;
+      color: #fff;
+    }
+
+    &-all-img {
+      @include flex-wrap-between;
+    }
+
+    &-section {
+      width: 48%;
+      margin-top: 92px;
+    }
+
+    &-logo {
+      height: 45px;
+      @include flex-center;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 33px;
+    }
+
+    &-last-text {
+      padding-top: 89px;
+      width: 83%;
+      color: #a291a5;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.8;
+      margin: 0 auto;
+    }
+
+    &-last-text:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #645766;
+      opacity: 1;
+      margin-top: 11px;
+      display: inline-flex;
+    }
+  }
+}
+@media all and (max-width: 516px) {
+  .advertising-heading{
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 626px) {
+  .fork-offers-option-services{
+    font-size: 12px;
+  }
+  .biggest-item-price-button{
+    width: 175px;
+  }
+}
+//SECTION People Are Talking About Fork END
+
+//Main content media
+@media all and (max-width: 650px){
+  .advertising-text{
+    width: 227px;
+  }
+}
+@media all and (max-width: 615px) {
+  .main__menu {
+    width: 85%;
+  }
+}
+
+
+//from 320 to 480
+
+//SECTION Here is what you get START
+@media (max-width: 480px) {
+  .menu-btn{
+    position: relative;
+    display: flex;
+  }
+  .header__logo{
+    margin-left: 0;
+  }
+  .header__content{
+    padding: 31px 16px;
+    justify-content: center;
+  }
+  .header__btn{
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .logo-text{
+    display: none;
+  }
+  .main__menu {
+    position: absolute;
+    flex-direction: column;
+    width: 290px;
+    background-color: #333333;
+    z-index: 10;
+    bottom: -340px;
+    display: none;
+
+    &__item {
+      text-align: left;
+      padding-top: 31px;
+      padding-bottom: 36px;
+      border-bottom: 2px solid #3B3B3B;
+    }
+
+    &__item a {
+      padding-left: 24px;
+      color: #fff;
+      border-left: 8px solid #333333;
+    }
+
+    &__item a:hover {
+      color: #8D81AC;
+      border-left: 8px solid #8d81ac;
+    }
+  }
+  .forkio-statistics__heading{
+    font-size: 19px;
+    line-height: 35px;
+    width: 236px;
+    margin: $marginCenter;
+  }
+  .forkio-statistics__description{
+    margin-top: 23px;
+  }
+  .download-btn__title{
+    width: 290px;
+  }
+  .statistic-links {
+    width: 320px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+      width: unset;
+      margin-right: 15px;
+    }
+
+    &__item:nth-child(1) {
+      margin-bottom: 15px;
+    }
+  }
+  .advantages {
+    width: 100%;
+    margin: $marginCenter;
+    padding-top: 0;
+    background: #f4f4f4;
+    overflow: hidden;
+
+    &-big-img{
+      max-width: 716px;
+      max-height: 381px;
+    }
+    &-item{
+      margin-bottom: 34px;
+      display: block;
+    }
+
+    &-none-heading {
+      font-size: 35px;
+      color: #8d81ac;
+      opacity: 1;
+      font-weight: 700;
+      padding-bottom: 34px;
+      margin-bottom: 0;
+      text-align: center;
+
+      &-second{
+        padding-left: 50px;
+      }
+    }
+    &-page{
+      display: block;
+      &-column {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 34px;
+      }
+    }
+
+    &-item-container {
+      width: 100%;
+      &-strong {
+        font-size: 12px;
+        font-weight: 400;
+        color: #323232;
+        text-align: center;
+        display: block;
+      }
+
+      &-text {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #848e97;
+        line-height: 21px;
+        text-align: center;
+        width: 100%;
+      }
+      &-img{
+        padding-bottom: 22px;
+        margin: $marginCenter;
+      }
+    }
+    &-heading{
+      display: none;
+    }
+  }
+  //SECTION Here is what you get END
+  //SECTION People Are Talking About Fork START
+  .advertising {
+    background: url("../img/testmonials.png") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 61px 10px 49px;
+
+
+    &-heading {
+      font-size: 26px;
+      color: #fff;
+    }
+
+    &-all-img {
+      @include flex-wrap-between;
+    }
+
+    &-section {
+      width: 95%;
+      margin-top: 37px;
+    }
+
+    &-logo {
+      height: 45px;
+      @include flex-center;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+      text-align: center;
+
+    }
+
+    &-last-text {
+      display: none;
+    }
+
+    &-thin-line{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #645766;
+      opacity: 1;
+      margin-top: 11px;
+      display: inline-flex;
+    }
+  }
+  .pricing-title{
+    font-size: 23px;
+  }
+  .fork-offers-options{
+    flex-direction: column;
+  }
+  .fork-offers-option{
+    width: 80%;
+  }
+  .fork-offers-option:nth-child(3){
+    width: 85%;
+  }
+}
+//SECTION People Are Talking About Fork END
